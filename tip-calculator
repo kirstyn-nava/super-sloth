@@ -1,0 +1,12 @@
+total_bill = float(input("What was the total bill? "))
+num_diners = int(input("How many people ate with you? "))
+
+tip_percent = int(input("What percent tip would you like to leave? "))
+tip_math = tip_percent / 100
+
+food_split = (round(total_bill / num_diners, 2))
+tip_split = (round(food_split * tip_math, 2))
+
+total_split = f"Each person should pay {food_split + tip_split}. \nBreakdown: \nFood: {food_split}\nTip: {tip_split}"
+
+print(total_split)
