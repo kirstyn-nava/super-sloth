@@ -1,0 +1,14 @@
+age = input("What is your current age? ")
+name = input("What is your name? ")
+age_as_int = int(age)
+
+years_remaining = 90 - age_as_int
+months_remaining = years_remaining * 12
+days_remaining = years_remaining * 365
+weeks_remaining = years_remaining * 52
+hours_remaining = days_remaining * 24
+minutes_remaining = hours_remaining * 60
+seconds_remaining = minutes_remaining * 60
+
+message = f'Hello, {name}. You are {age_as_int} years old. You have {seconds_remaining} seconds, {minutes_remaining} minutes, {hours_remaining} hours, {weeks_remaining} weeks, {months_remaining} months, and {years_remaining} years left to live if you live to be 90.'
+print(message)
